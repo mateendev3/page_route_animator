@@ -1,35 +1,39 @@
+// ignore_for_file: overridden_fields
 library page_route_animator;
 
 import 'route_animation.dart';
 import 'package:flutter/material.dart';
 
 class PageRouteAnimator<T> extends PageRouteBuilder<T> {
+  /// Creates an animated route, pass next screen as child.
   PageRouteAnimator({
-    super.barrierDismissible,
-    super.barrierColor,
-    super.barrierLabel,
-    required Widget child,
-    Widget? currentChild,
-    Curve curve = Curves.linear,
-    super.fullscreenDialog,
-    super.maintainState,
-    super.opaque,
-    this.animationDuration = const Duration(milliseconds: 300),
-    this.reverseAnimationDuration = const Duration(milliseconds: 300),
-    required RouteAnimation routeAnimation,
+    this.barrierDismissible = false,
+    this.barrierColor,
+    this.barrierLabel,
+    required this.child,
+    this.currentChild,
+    this.curve = Curves.linear,
+    this.fullscreenDialog = false,
+    this.maintainState = true,
+    this.opaque = true,
+    this.duration = const Duration(milliseconds: 300),
+    this.reverseDuration = const Duration(milliseconds: 300),
+    required this.routeAnimation,
     RouteSettings? settings,
   }) : super(
-          transitionDuration: animationDuration,
-          reverseTransitionDuration: reverseAnimationDuration,
+          barrierDismissible: barrierDismissible,
+          barrierColor: barrierColor,
+          barrierLabel: barrierLabel,
+          fullscreenDialog: fullscreenDialog,
+          maintainState: maintainState,
+          opaque: opaque,
+          transitionDuration: duration,
+          settings: settings,
+          reverseTransitionDuration: reverseDuration,
           pageBuilder: (context, animation, secondaryAnimation) {
             return child;
           },
-          transitionsBuilder: (
-            context,
-            animation,
-            secondaryAnimation,
-            child,
-          ) {
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
             Widget getSlideFadeAndRotateAnimation(Offset begin, Widget child) {
               return SlideTransition(
                 position: Tween<Offset>(
@@ -834,21 +838,50 @@ currentChild: this (In stateless widget) OR widget (In stateful widget)
               case RouteAnimation.bottomRightToTopLeftWithFadeRotateAndScale:
                 return getSlideFadeRotateAndScaleAnimation(
                     const Offset(1, 1), child);
-
-              default:
-                return SlideTransition(
-                  position: Tween<Offset>(
-                    begin: const Offset(1, 0),
-                    end: const Offset(0, 0),
-                  ).animate(
-                    CurvedAnimation(parent: animation, curve: curve),
-                  ),
-                  child: child,
-                );
             }
           },
         );
 
-  Duration animationDuration;
-  Duration reverseAnimationDuration;
+  /// The color to use for the modal barrier. If this is null, the barrier will be transparent.
+  @override
+  final Color? barrierColor;
+
+  /// Whether you can dismiss this route by tapping the modal barrier.
+  @override
+  final bool barrierDismissible;
+
+  /// The semantic label used for a dismissible barrier.
+  @override
+  final String? barrierLabel;
+
+  /// The widget/screen where you want to navigate.
+  final Widget child;
+
+  /// Your current widget/screen.
+  final Widget? currentChild;
+
+  /// Curve for navigation animation.
+  final Curve curve;
+
+  /// Whether this page route is a full-screen dialog.
+  @override
+  final bool fullscreenDialog;
+
+  /// Whether the route should remain in memory when it is inactive.
+  @override
+  final bool maintainState;
+
+  /// Whether the route obscures previous routes when the transition is complete.
+  @override
+  final bool opaque;
+
+  /// Duration for navigation animation, default is 300 ms.
+  final Duration duration;
+
+  /// Duration for navigation animation while pop, default is 300 ms.
+  final Duration reverseDuration;
+
+  /// The route animation which you want to use for navigation.
+  /// There are 62 different animation which you can use.
+  final RouteAnimation routeAnimation;
 }
