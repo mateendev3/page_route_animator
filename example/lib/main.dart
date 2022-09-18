@@ -4,6 +4,7 @@ import 'package:page_route_animator/page_route_animator.dart';
 void main(List<String> args) => runApp(const MyApp());
 
 /// This widget is the root of your app.
+/// Note: Use "ctrl + F" to search in a page.
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -1046,20 +1047,7 @@ class SecondScreen extends StatelessWidget {
   }
 }
 
-/// ThirdScreen
-class ThirdScreen extends StatelessWidget {
-  const ThirdScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('ThirdScreen'),
-      ),
-    );
-  }
-}
-
+// Helper Widget
 Widget getText(String text) {
   return Align(
     alignment: Alignment.centerLeft,
