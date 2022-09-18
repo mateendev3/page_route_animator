@@ -1,10 +1,10 @@
 name: page_route_animator
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: Flutter page route transition package, with 62 different transitions.
+version: 1.0.0
+homepage: https://github.com/mateendev3/page_route_animator
 
 environment:
-  sdk: ">=2.17.6 <3.0.0"
+  sdk: ">=2.12.0 <3.3.0"
   flutter: ">=1.17.0"
 
 dependencies:
