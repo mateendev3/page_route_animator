@@ -4,7 +4,7 @@ version: 1.0.0
 homepage: https://github.com/mateendev3/page_route_animator
 
 environment:
-  sdk: ">=2.12.0 <3.3.0"
+  sdk: ">=2.12.0 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
