@@ -9,6 +9,28 @@ Flutter page route transition package, with 62 different page transitions.
 
 ## Examples
 
+<div style="text-align: center">
+    <table>
+        <tr>
+            <td style="text-align: center">
+                <a href="#">
+                    <img src="resources/page_route_animator_20_transitions_p1.gif" width="200"/>
+                </a>
+            </td>            
+            <td style="text-align: center">
+                <a href="#">
+                    <img src="resources/page_route_animator_20_transitions_p2.gif" width="200"/>
+                </a>
+            </td>            
+            <td style="text-align: center">
+                <a href="#">
+                    <img src="resources/page_route_animator_20_transitions_p3.gif" width="200"/>
+                </a>
+            </td>            
+        </tr>
+    </table>
+</div>
+
 ## Getting Started
 
 In the pubspec.yaml of your flutter project, add the following dependency:
@@ -267,7 +289,7 @@ Widget getText(String text) {
 
 ## Curves
 
-Learned about Curves from official docs [curves](https://docs.flutter.io/flutter/animation/Curves-class.html).
+Learn about Curves from official docs, [curves](https://docs.flutter.io/flutter/animation/Curves-class.html).
 
 ## License
 
