@@ -14,17 +14,17 @@ Flutter page route transition package, with 62 different page transitions.
         <tr>
             <td style="text-align: center">
                 <a href="#">
-                    <img src="resources/page_route_animator_20_transitions_p1.gif" width="200"/>
+                    <img src="https://github.com/mateendev3/page_route_animator/blob/master/resources/page_route_animator_20_transitions_p1.gif" width="200"/>
                 </a>
             </td>            
             <td style="text-align: center">
                 <a href="#">
-                    <img src="resources/page_route_animator_20_transitions_p2.gif" width="200"/>
+                    <img src="https://github.com/mateendev3/page_route_animator/blob/master/resources/page_route_animator_20_transitions_p2.gif" width="200"/>
                 </a>
             </td>            
             <td style="text-align: center">
                 <a href="#">
-                    <img src="resources/page_route_animator_20_transitions_p3.gif" width="200"/>
+                    <img src="https://github.com/mateendev3/page_route_animator/blob/master/resources/page_route_animator_20_transitions_p3.gif" width="200"/>
                 </a>
             </td>            
         </tr>
