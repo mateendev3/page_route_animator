@@ -13,9 +13,7 @@ Flutter page route transition package, with 62 different page transitions.
     <table>
         <tr>
             <td style="text-align: center">
-                <a href="#">
-                    <img src="https://i.ibb.co/7Xr8ktz/page-route-animator-20-transitions-p1.gif" alt="page-route-animator-20-transitions-p1" width="200"/>
-                </a>
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/7Xr8ktz/page-route-animator-20-transitions-p1.gif" alt="page-route-animator-20-transitions-p1" border="0" width="200" /></a>
             </td>            
             <td style="text-align: center">
                 <a href="#">
