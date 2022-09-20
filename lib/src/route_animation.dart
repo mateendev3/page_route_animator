@@ -1,4 +1,4 @@
-/// Route animation which you want to you to navigate.
+/// Route animation which you want to use to navigate.
 enum RouteAnimation {
   /// Slide animation from top to bottom
   topToBottom,
