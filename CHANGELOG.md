@@ -1,3 +1,8 @@
+## 1.0.3
+
+- Added documentation to main library class 'PageRouteAnimator'.
+- Updated data in README file
+
 ## 1.0.2
 
 - Fixed bug: gif examples not showing.

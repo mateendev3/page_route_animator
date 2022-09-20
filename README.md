@@ -31,7 +31,7 @@ In the pubspec.yaml of your flutter project, add the following dependency:
 
 ```yaml
 dependencies:
-  page_route_transition: ^1.0.1
+  page_route_transition: ^1.0.3
 ```
 
 ## Usage

@@ -4,6 +4,7 @@ library page_route_animator;
 import 'package:flutter/material.dart';
 import 'route_animation.dart';
 
+/// PageRouteAnimator for page route transition
 class PageRouteAnimator<T> extends PageRouteBuilder<T> {
   /// Creates an animated route, pass next screen as child.
   PageRouteAnimator({
